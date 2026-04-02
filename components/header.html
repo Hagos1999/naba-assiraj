@@ -37,9 +37,18 @@
             border-radius: 12px !important;
             overflow: hidden !important;
             transition: all 0.3s ease !important;
-            background-color: #fff !important;
+            background-color: #ffffff !important;
             color: #000000 !important;
         }
+        
+        /* Remove ugly text backgrounds inside cards and enforce black text */
+        .causes-box-subtitle, .causes-box-subtext, .causes-details, 
+        .creative-passion-text, .testimonial-name-text, .testimonial-info-text,
+        .cause-time-text, ._0-percent, .causes-title-text, .cause-icon-i {
+            background-color: transparent !important;
+            color: #000000 !important;
+        }
+
         .causes-box:hover, .creative-card:hover {
             border-color: #D4AF37 !important;
             box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15) !important;
@@ -57,7 +66,24 @@
             font-size: 7vw !important; /* Scaled perfectly for 12 characters */
             line-height: 1 !important;
             margin: 0 !important;
+            background: none !important;
+            -webkit-text-fill-color: #D4AF37 !important;
             color: #D4AF37 !important;
+        }
+        
+        /* Remove Made in Webflow Badge globally */
+        .w-webflow-badge, img[src*="webflow"] {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        /* Eradicate green from progress bars */
+        .cause-line {
+            background-color: #D4AF37 !important;
+        }
+        .cause-line-wrap {
+            background-color: rgba(212, 175, 55, 0.2) !important;
         }
     </style>
         <div class="mini-nav-main">
