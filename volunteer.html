@@ -44,10 +44,71 @@
 <body>
     <!-- START HEADER -->
 <header>
+    <style>
+        /* Naba Assiraj Global Brand Enforcement */
+        :root {
+            --primary: #D4AF37 !important;
+            --brand-main: #D4AF37 !important;
+        }
+        
+        /* Eradicate Green Colors globally */
+        .color, .creative-name-text, .testimonial-name-text, h1, h2, h3, h4, .text-color-green, .footer-wrap-text, .footer-info-text, .f-page-text, .copyright-link, .creative-passion-text {
+            /* Targeting historically green texts and footer links */
+            color: #D4AF37 !important;
+        }
+
+        /* Buttons & Call to Actions */
+        .primary-button, .n-button-box, .btn-donate, .calc-total {
+            background-color: #D4AF37 !important; /* Fixed: Removed causes-box-subtext */
+            color: #fff !important;
+            border-color: #D4AF37 !important;
+        }
+        .n-menu-link-text:hover, a:hover, .breadcramb-title-text {
+            color: #C59B27 !important;
+        }
+
+        /* Social Media Hover Fixes */
+        .f-social-icon:hover, .mini-nav-icon:hover, .f-social-icon-box:hover {
+            color: #C59B27 !important;
+            background-color: transparent !important;
+        }
+        .f-social-icon, .mini-nav-icon {
+            color: #D4AF37 !important;
+        }
+        
+        /* Formatting the "Any Card" constraint */
+        .causes-box, .creative-card, .testimonial-items-card, .causes-wrap-down {
+            border: 1px solid rgba(212, 175, 55, 0.2) !important;
+            border-radius: 12px !important;
+            overflow: hidden !important;
+            transition: all 0.3s ease !important;
+            background-color: #fff !important;
+            color: #000000 !important;
+        }
+        .causes-box:hover, .creative-card:hover {
+            border-color: #D4AF37 !important;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15) !important;
+        }
+
+        /* Fixing the Alphabet 'NABA ASSIRAJ' overflow */
+        .footer-name-logo {
+            display: flex !important;
+            justify-content: space-evenly !important;
+            flex-wrap: nowrap !important;
+            width: 100% !important;
+            overflow: visible !important;
+        }
+        .footer-name-text {
+            font-size: 7vw !important; /* Scaled perfectly for 12 characters */
+            line-height: 1 !important;
+            margin: 0 !important;
+            color: #D4AF37 !important;
+        }
+    </style>
         <div class="mini-nav-main">
             <div class="mini-nav">
                 <div class="hambargar-mini-w">
-                    <a href="index.html" aria-current="page" class="mini-nav-logo w-inline-block w--current"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afc946dd6cb44228a5e057_Vector%20(7).png" alt="Nav Logo" class="mini-n-logo"></a><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698974ac4683c06ab3ffdc67_svgviewer-output%20(1).svg" alt="close btn
+                    <a href="index.html" aria-current="page" class="mini-nav-logo w-inline-block w--current"><img loading="lazy" src="images/logo.png" alt="Naba Assiraj" class="mini-n-logo" style="max-height:50px;"></a><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698974ac4683c06ab3ffdc67_svgviewer-output%20(1).svg" alt="close btn
 " class="ham-bargar-icon">
                 </div>
                 <div class="nav-menu-main">
@@ -121,7 +182,7 @@
                     </div>
                     <div class="navbar">
                         <div class="navbar-log">
-                            <a href="index.html" aria-current="page" class="n-logo-wrap w-inline-block w--current"><img loading="lazy" height="Auto" alt="N Logo" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afc946dd6cb44228a5e057_Vector%20(7).png" class="n-logo"></a>
+                            <a href="index.html" aria-current="page" class="n-logo-wrap w-inline-block w--current"><img loading="lazy" height="Auto" alt="Naba Assiraj" src="images/logo.png" class="n-logo" style="max-height:75px;"></a>
                         </div>
                         <div class="navbar-menu">
                             <div class="n-menu-item-ul">
@@ -148,7 +209,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="button">
+                        <div class="button" style="display:flex; align-items:center;">
+                            <div class="lang-toggle" style="margin-right:20px; font-weight:bold; font-size:16px;">
+                                <a href="/" style="color:#D4AF37; text-decoration:none;">EN</a> <span style="color:#333; margin:0 5px;">|</span> <a href="/ar/" style="color:#333; text-decoration:none;">AR</a>
+                            </div>
                             <div class="menu-button-box menu-hide">
                                 <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                     <div class="ani primary">
@@ -401,102 +465,112 @@
     </div>
     <!-- START FOOTER -->
 <footer>
-        <section class="section footer">
-            <div class="w-layout-blockcontainer container footer w-container">
-                <div class="footer-main">
-                    <div data-w-id="21b413b6-f5e2-082e-e0dc-dc99771f4760" class="footer-up-box">
-                        <div class="footer-up-title">
-                            <div class="footer-up-title-text">
-                                Let’s Build Something Together
-                            </div>
+    <section class="section footer">
+        <div class="w-layout-blockcontainer container footer w-container">
+            <div class="footer-main">
+                <div data-w-id="21b413b6-f5e2-082e-e0dc-dc99771f4760" class="footer-up-box">
+                    <div class="footer-up-title">
+                        <div class="footer-up-title-text">
+                            Let’s Build Something Together
                         </div>
-                        <a href="contact.html" class="footer-up-link w-inline-block">
-                            <div class="footer-up-icon"></div>
-                        </a>
                     </div>
-                    <div class="footer-wrap-main">
-                        <div data-w-id="b8887cd5-debc-41cb-c075-eb5f1bafdfd2" class="footer-wrap-left">
-                            <div class="footer-wrap-logo">
-                                <img src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afc946dd6cb44228a5e057_Vector%20(7).png" loading="lazy" alt="" class="footer-logo-image">
-                            </div>
-                            <div class="footer-wrap-title">
-                                <h2 class="footer-wrap-text">
-                                    Welcome to our crowdfunding &amp; Charity agency
-                                </h2>
-                            </div>
+                    <a href="contact.html" class="footer-up-link w-inline-block">
+                        <div class="footer-up-icon"></div>
+                    </a>
+                </div>
+                <div class="footer-wrap-main">
+                    <div data-w-id="b8887cd5-debc-41cb-c075-eb5f1bafdfd2" class="footer-wrap-left">
+                        <div class="footer-wrap-logo">
+                            <img src="images/logo.png" loading="lazy" alt="Naba Assiraj" class="footer-logo-image"
+                                style="max-height:80px;">
                         </div>
-                        <div data-w-id="b8887cd5-debc-41cb-c075-eb5f1bafdfe9" class="footer-wrap-right">
-                            <div class="footer-menu-icons">
-                                <div class="footer-menu-box">
-                                    <div class="f-page-menu-w">
-                                        <a href="index.html" aria-current="page" class="f-page-link w-inline-block w--current">
-                                            <div class="f-page-text">Home</div>
-                                        </a><a href="about.html" class="f-page-link w-inline-block">
-                                            <div class="f-page-text">About Us</div>
-                                        </a>
-                                    </div>
-                                    <div class="f-page-menu-w">
-                                        <a href="volunteer.html" class="f-page-link w-inline-block">
-                                            <div class="f-page-text">Volunteer</div>
-                                        </a><a href="contact.html" class="f-page-link w-inline-block">
-                                            <div class="f-page-text">Contact</div>
-                                        </a>
-                                    </div>
-                                    <div class="f-page-menu-w">
-                                        
-                                    </div>
-                                    <div class="f-page-menu-w">
-                                        
-                                    </div>
-                                </div>
-                                <div class="footer-icon-box">
-                                    <div class="f-social-icon-flex">
-                                        <div class="f-social-icon-box">
-                                            <a href="https://www.facebook.com/" class="f-social-icon"></a>
-                                        </div>
-                                        <div class="f-social-icon-box">
-                                            <a href="https://www.instagram.com/" class="f-social-icon"></a>
-                                        </div>
-                                        <div class="f-social-icon-box">
-                                            <a href="https://www.behance.net/" class="f-social-icon"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="footer-copyright-wrap">
-                                <div class="footer-wrap-box">
-                                    <a href="mailto:info@example.com?subject=info%40example.com" class="footer-info-link w-inline-block">
-                                        <div class="footer-info-text">info@example.com</div>
+                        <div class="footer-wrap-title">
+                            <h2 class="footer-wrap-text" style="font-size:1.5rem; line-height:1.4;">
+                                "When a person dies, their deeds come to an end except for three: ongoing charity,
+                                knowledge that is benefited from, and a righteous child who prays for them."<br><br>—
+                                Sahih Muslim
+                            </h2>
+                        </div>
+                    </div>
+                    <div data-w-id="b8887cd5-debc-41cb-c075-eb5f1bafdfe9" class="footer-wrap-right">
+                        <div class="footer-menu-icons">
+                            <div class="footer-menu-box">
+                                <div class="f-page-menu-w">
+                                    <a href="index.html" aria-current="page"
+                                        class="f-page-link w-inline-block w--current">
+                                        <div class="f-page-text">Home</div>
+                                    </a><a href="about.html" class="f-page-link w-inline-block">
+                                        <div class="f-page-text">About Us</div>
                                     </a>
-                                    <div class="footer-info-address">
-                                        <div class="footer-info-text">16/D Falcon Tower, NYD</div>
-                                    </div>
                                 </div>
-                                <div class="footer-copyright-box">
-                                    <div class="footer-copyright-text">
-                                        Copyright © PureHope reserved Powered by
-                                        <a href="https://webflow.com/" class="copyright-link">Webflow</a>
-                                        | Created By
-                                        <a href="https://webflow.com/templates/designers/flow-vines" class="copyright-link">Flow Vines</a>
+                                <div class="f-page-menu-w">
+                                    <a href="volunteer.html" class="f-page-link w-inline-block">
+                                        <div class="f-page-text">Volunteer</div>
+                                    </a><a href="contact.html" class="f-page-link w-inline-block">
+                                        <div class="f-page-text">Contact</div>
+                                    </a>
+                                </div>
+                                <div class="f-page-menu-w">
+
+                                </div>
+                                <div class="f-page-menu-w">
+
+                                </div>
+                            </div>
+                            <div class="footer-icon-box">
+                                <div class="f-social-icon-flex">
+                                    <div class="f-social-icon-box">
+                                        <a href="https://www.facebook.com/" class="f-social-icon"></a>
+                                    </div>
+                                    <div class="f-social-icon-box">
+                                        <a href="https://www.instagram.com/" class="f-social-icon"></a>
+                                    </div>
+                                    <div class="f-social-icon-box">
+                                        <a href="https://www.behance.net/" class="f-social-icon"></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div data-w-id="875aff22-aa46-4d55-4791-dfedbcf22b59" class="footer-name-logo">
-                        <div class="footer-name-text">P</div>
-                        <div class="footer-name-text">U</div>
-                        <div class="footer-name-text">R</div>
-                        <div class="footer-name-text">E</div>
-                        <div class="footer-name-text">H</div>
-                        <div class="footer-name-text">O</div>
-                        <div class="footer-name-text">P</div>
-                        <div class="footer-name-text">E</div>
+                        <div class="footer-copyright-wrap">
+                            <div class="footer-wrap-box">
+                                <a href="mailto:info@example.com?subject=info%40example.com"
+                                    class="footer-info-link w-inline-block">
+                                    <div class="footer-info-text">info@example.com</div>
+                                </a>
+                                <div class="footer-info-address">
+                                    <div class="footer-info-text">16/D Falcon Tower, NYD</div>
+                                </div>
+                            </div>
+                            <div class="footer-copyright-box">
+                                <div class="footer-copyright-text">
+                                    Copyright © PureHope reserved Powered by
+                                    <a href="https://webflow.com/" class="copyright-link">Webflow</a>
+                                    | Created By
+                                    <a href="https://webflow.com/templates/designers/flow-vines"
+                                        class="copyright-link">Flow Vines</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div data-w-id="875aff22-aa46-4d55-4791-dfedbcf22b59" class="footer-name-logo">
+                    <div class="footer-name-text">N</div>
+                    <div class="footer-name-text">A</div>
+                    <div class="footer-name-text">B</div>
+                    <div class="footer-name-text">A</div>
+                    <div class="footer-name-text"></div>
+                    <div class="footer-name-text">A</div>
+                    <div class="footer-name-text">S</div>
+                    <div class="footer-name-text">S</div>
+                    <div class="footer-name-text">I</div>
+                    <div class="footer-name-text">R</div>
+                    <div class="footer-name-text">A</div>
+                    <div class="footer-name-text">J</div>
+                </div>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+</footer>
 <!-- END FOOTER -->
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69896482002147cf48fc8172" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/js/webflow.8c902227.f49aa1b92cf27f7e.js" type="text/javascript" integrity="sha384-ENtQaUG26t3LT3Gx43bf3zm396sa8UOrVfGDObm/d8KrTbLdaUSEzZ4qfdzsjLJS" crossorigin="anonymous"></script>

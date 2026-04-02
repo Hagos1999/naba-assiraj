@@ -1,8 +1,69 @@
 <header>
+    <style>
+        /* Naba Assiraj Global Brand Enforcement */
+        :root {
+            --primary: #D4AF37 !important;
+            --brand-main: #D4AF37 !important;
+        }
+        
+        /* Eradicate Green Colors globally */
+        .color, .creative-name-text, .testimonial-name-text, h1, h2, h3, h4, .text-color-green, .footer-wrap-text, .footer-info-text, .f-page-text, .copyright-link, .creative-passion-text {
+            /* Targeting historically green texts and footer links */
+            color: #D4AF37 !important;
+        }
+
+        /* Buttons & Call to Actions */
+        .primary-button, .n-button-box, .btn-donate, .calc-total {
+            background-color: #D4AF37 !important; /* Fixed: Removed causes-box-subtext */
+            color: #fff !important;
+            border-color: #D4AF37 !important;
+        }
+        .n-menu-link-text:hover, a:hover, .breadcramb-title-text {
+            color: #C59B27 !important;
+        }
+
+        /* Social Media Hover Fixes */
+        .f-social-icon:hover, .mini-nav-icon:hover, .f-social-icon-box:hover {
+            color: #C59B27 !important;
+            background-color: transparent !important;
+        }
+        .f-social-icon, .mini-nav-icon {
+            color: #D4AF37 !important;
+        }
+        
+        /* Formatting the "Any Card" constraint */
+        .causes-box, .creative-card, .testimonial-items-card, .causes-wrap-down {
+            border: 1px solid rgba(212, 175, 55, 0.2) !important;
+            border-radius: 12px !important;
+            overflow: hidden !important;
+            transition: all 0.3s ease !important;
+            background-color: #fff !important;
+            color: #000000 !important;
+        }
+        .causes-box:hover, .creative-card:hover {
+            border-color: #D4AF37 !important;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15) !important;
+        }
+
+        /* Fixing the Alphabet 'NABA ASSIRAJ' overflow */
+        .footer-name-logo {
+            display: flex !important;
+            justify-content: space-evenly !important;
+            flex-wrap: nowrap !important;
+            width: 100% !important;
+            overflow: visible !important;
+        }
+        .footer-name-text {
+            font-size: 7vw !important; /* Scaled perfectly for 12 characters */
+            line-height: 1 !important;
+            margin: 0 !important;
+            color: #D4AF37 !important;
+        }
+    </style>
         <div class="mini-nav-main">
             <div class="mini-nav">
                 <div class="hambargar-mini-w">
-                    <a href="index.html" aria-current="page" class="mini-nav-logo w-inline-block w--current"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afc946dd6cb44228a5e057_Vector%20(7).png" alt="Nav Logo" class="mini-n-logo"></a><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698974ac4683c06ab3ffdc67_svgviewer-output%20(1).svg" alt="close btn
+                    <a href="index.html" aria-current="page" class="mini-nav-logo w-inline-block w--current"><img loading="lazy" src="images/logo.png" alt="Naba Assiraj" class="mini-n-logo" style="max-height:50px;"></a><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698974ac4683c06ab3ffdc67_svgviewer-output%20(1).svg" alt="close btn
 " class="ham-bargar-icon">
                 </div>
                 <div class="nav-menu-main">
@@ -76,7 +137,7 @@
                     </div>
                     <div class="navbar">
                         <div class="navbar-log">
-                            <a href="index.html" aria-current="page" class="n-logo-wrap w-inline-block w--current"><img loading="lazy" height="Auto" alt="N Logo" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afc946dd6cb44228a5e057_Vector%20(7).png" class="n-logo"></a>
+                            <a href="index.html" aria-current="page" class="n-logo-wrap w-inline-block w--current"><img loading="lazy" height="Auto" alt="Naba Assiraj" src="images/logo.png" class="n-logo" style="max-height:75px;"></a>
                         </div>
                         <div class="navbar-menu">
                             <div class="n-menu-item-ul">
@@ -103,7 +164,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="button">
+                        <div class="button" style="display:flex; align-items:center;">
+                            <div class="lang-toggle" style="margin-right:20px; font-weight:bold; font-size:16px;">
+                                <a href="/" style="color:#D4AF37; text-decoration:none;">EN</a> <span style="color:#333; margin:0 5px;">|</span> <a href="/ar/" style="color:#333; text-decoration:none;">AR</a>
+                            </div>
                             <div class="menu-button-box menu-hide">
                                 <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                     <div class="ani primary">
