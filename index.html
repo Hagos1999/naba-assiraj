@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home - PureHope - Webflow HTML Website Template</title>
+    <title>Naba Assiraj</title>
     <meta
         content="PureHope - A modern Webflow charity template crafted for nonprofits, NGOs, donation campaigns, and community initiatives to raise funds and create impact."
         name="description">
@@ -13,13 +13,13 @@
     <meta
         content="PureHope - A modern Webflow charity template crafted for nonprofits, NGOs, donation campaigns, and community initiatives to raise funds and create impact."
         property="og:description">
-    <meta content="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b3d3163d2aaf4bc76aa455_Thumbnail.png"
+    <meta content="images/logo.png"
         property="og:image">
     <meta content="Home - PureHope - Webflow HTML Website Template" property="twitter:title">
     <meta
         content="PureHope - A modern Webflow charity template crafted for nonprofits, NGOs, donation campaigns, and community initiatives to raise funds and create impact."
         property="twitter:description">
-    <meta content="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b3d3163d2aaf4bc76aa455_Thumbnail.png"
+    <meta content="images/logo.png"
         property="twitter:image">
     <meta property="og:type" content="website">
     <meta content="summary_large_image" name="twitter:card">
@@ -80,9 +80,9 @@
         })(window, document);
     </script>
     <link
-        href="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afe77e65dbdd817c905554_Favicon%20small.png"
+        href="images/logo.png"
         rel="shortcut icon" type="image/x-icon">
-    <link href="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69afe782f0cae242aa421e19_Favicon.png"
+    <link href="images/logo.png"
         rel="apple-touch-icon">
     <style>
         :root {
@@ -128,9 +128,48 @@
             background-color: #D4AF37 !important; /* Fixed: Removed causes-box-subtext */
             color: #fff !important;
             border-color: #D4AF37 !important;
+            box-shadow: none !important; /* Removed UI AI-like shadow */
         }
         .n-menu-link-text:hover, a:hover, .breadcramb-title-text {
             color: #C59B27 !important;
+        }
+        
+        /* Active Navbar Link Fix */
+        .w--current, a.w--current, .n-menu-link-text.w--current, .f-page-text.w--current {
+            color: #D4AF37 !important;
+        }
+        
+        /* Navbar Green Hover Dot Fix */
+        .hover {
+            background-color: #D4AF37 !important;
+        }
+
+        /* Sticky Navbar background */
+        .section.header-s, .nav-wrapper, .fixed.about {
+            background-color: rgba(255, 255, 255, 0.98) !important;
+        }
+
+        /* Footer layout – restored */
+        .section.footer {
+            padding-top: 60px !important;
+            padding-bottom: 40px !important;
+        }
+        .footer-wrap-main {
+            gap: 40px !important;
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+        .f-social-icon-box {
+            width: 52px !important;
+            height: 52px !important;
+            min-height: 52px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .f-social-icon { font-size: 0 !important; }
+        .footer-logo-image {
+            max-height: 80px !important;
         }
 
         /* Social Media Hover Fixes */
@@ -238,8 +277,8 @@
                         <div class="mini-contact-btn-wrap">
                             <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                 <div class="ani primary">
-                                    <div class="nav-btn-icon absolute"></div>
-                                    <div class="nav-btn-icon"></div>
+                                    <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                    <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                 </div>
                                 <div class="n-button-box">
                                     <div class="n-button-text">Donate Now</div>
@@ -308,8 +347,8 @@
                             <div class="menu-button-box menu-hide">
                                 <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                     <div class="ani primary">
-                                        <div class="nav-btn-icon absolute"></div>
-                                        <div class="nav-btn-icon"></div>
+                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                     </div>
                                     <div class="n-button-box">
                                         <div class="n-button-text">Donate Now</div>
@@ -348,8 +387,8 @@
                                                     <a href="donate.html"
                                                         class="prime-button-wrap primary-button w-inline-block">
                                                         <div class="ani primary">
-                                                            <div class="nav-btn-icon absolute"></div>
-                                                            <div class="nav-btn-icon"></div>
+                                                            <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                                            <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                                         </div>
                                                         <div class="n-button-box">
                                                             <div class="n-button-text">Get Started Now</div>
@@ -406,8 +445,8 @@
                                                             <a href="donate.html"
                                                                 class="prime-button-wrap primary-button w-inline-block">
                                                                 <div class="ani primary">
-                                                                    <div class="nav-btn-icon absolute"></div>
-                                                                    <div class="nav-btn-icon"></div>
+                                                                    <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                                                    <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                                                 </div>
                                                                 <div class="n-button-box">
                                                                     <div class="n-button-text">Donate Now</div>
@@ -475,8 +514,8 @@
                                 <div class="about-button">
                                     <a href="about.html" class="prime-button-wrap primary-button w-inline-block">
                                         <div class="ani primary">
-                                            <div class="nav-btn-icon absolute"></div>
-                                            <div class="nav-btn-icon"></div>
+                                            <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                            <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                         </div>
                                         <div class="n-button-box">
                                             <div class="n-button-text">More About Us</div>
@@ -671,8 +710,8 @@
                                                 <a href="donate.html"
                                                     class="prime-button-wrap primary-button w-inline-block">
                                                     <div class="ani primary">
-                                                        <div class="nav-btn-icon absolute"></div>
-                                                        <div class="nav-btn-icon"></div>
+                                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                                     </div>
                                                     <div class="n-button-box">
                                                         <div class="n-button-text">Donate Now</div>
@@ -724,8 +763,8 @@
                                                 <a href="donate.html"
                                                     class="prime-button-wrap primary-button w-inline-block">
                                                     <div class="ani primary">
-                                                        <div class="nav-btn-icon absolute"></div>
-                                                        <div class="nav-btn-icon"></div>
+                                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                                     </div>
                                                     <div class="n-button-box">
                                                         <div class="n-button-text">Donate Now</div>
@@ -777,8 +816,8 @@
                                                 <a href="donate.html"
                                                     class="prime-button-wrap primary-button w-inline-block">
                                                     <div class="ani primary">
-                                                        <div class="nav-btn-icon absolute"></div>
-                                                        <div class="nav-btn-icon"></div>
+                                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                                     </div>
                                                     <div class="n-button-box">
                                                         <div class="n-button-text">Donate Now</div>
@@ -797,345 +836,8 @@
                 </div>
             </div>
         </section>
-        <section class="section service-p">
-            <div class="w-layout-blockcontainer container w-container">
-                <div class="service-box-wrap">
-                    <div data-w-id="3bbc3648-1fa2-f807-debd-4deeb851edd9" style="opacity: 0"
-                        class="service-box volunteer">
-                        <div class="service-heading-box">
-                            <div class="service-heading-icon">
-                                <img loading="lazy"
-                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b15e801d3e35c611e62dd_service-heading-icon.png"
-                                    alt="Green heart formed by two hands shaking in a handshake gesture."
-                                    class="service-icon-img">
-                            </div>
-                            <div class="service-heading-title">
-                                <h2 class="service-heading-text">
-                                    Join us and Become A Volunteer
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="service-heading-subtitle">
-                            <p class="service-heading-subtext">
-                                Efficiently maximize one-to-one action items for market
-                                positioning potentialities. Uniquely evolve strategic
-                                infomediaries after interma ors with open-source intellectual
-                                capital.
-                            </p>
-                        </div>
-                        <div data-w-id="3bbc3648-1fa2-f807-debd-4deeb851ede3" class="service-box-button">
-                            <a href="volunteer.html" class="prime-button-wrap primary-button w-inline-block">
-                                <div class="ani primary">
-                                    <div class="nav-btn-icon absolute"></div>
-                                    <div class="nav-btn-icon"></div>
-                                </div>
-                                <div class="n-button-box">
-                                    <div class="n-button-text">Become Volunteer</div>
-                                    <div class="n-button-text text-absulet">
-                                        Become Volunteer
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div data-w-id="3bbc3648-1fa2-f807-debd-4deeb851ede9" style="opacity: 0" class="service-box donate">
-                        <div class="service-heading-box">
-                            <div class="service-heading-icon">
-                                <img loading="lazy"
-                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b18b261f49f3805524014_donate-heading-icon.png"
-                                    alt="Orange hand holding a small coin." class="service-icon-img">
-                            </div>
-                            <div class="service-heading-title">
-                                <h2 class="service-heading-text">
-                                    Start Donating for the Poor People
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="service-heading-subtitle">
-                            <p class="service-heading-subtext">
-                                Effectively channel every act of generosity to maximize
-                                life-changing impact. Uniquely empower communities and
-                                individuals by leveraging resources &amp; knowledge for
-                                future.
-                            </p>
-                        </div>
-                        <div class="service-box-button">
-                            <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
-                                <div class="ani primary">
-                                    <div class="nav-btn-icon absolute"></div>
-                                    <div class="nav-btn-icon"></div>
-                                </div>
-                                <div class="n-button-box">
-                                    <div class="n-button-text">Donate Now</div>
-                                    <div class="n-button-text text-absulet">Donate Now</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section service">
-            <div class="w-layout-blockcontainer container w-container">
-                <div class="service-wrap">
-                    <div class="service-wrap-up">
-                        <div class="service-short-box">
-                            <div class="all-sub-title">
-                                <div class="all-sub-title-text">Service</div>
-                                <img loading="lazy"
-                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b2523d24b96e07be20d76e_Group%20(13).png"
-                                    alt="client sub icon
-" class="client-sub-img">
-                            </div>
-                        </div>
-                        <div class="service-title-wrap">
-                            <h2 class="service-title-text">What do we help</h2>
-                        </div>
-                    </div>
-                    <div class="service-ul-w">
-                        <div class="service-item-v active">
-                            <div class="service-title-block active">
-                                <div class="service-title-v">
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6993fb708a861828acf1bc91_icon-rotate-01.png"
-                                        alt="Blue squared symbol with a white curved arrow rotating counterclockwise inside."
-                                        class="service-block-icon">
-                                    <div class="service-block-title">kids education</div>
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6993fa4b925213dd85ed3181_Rectangle%2053.png"
-                                        alt="service line" class="service-block-line">
-                                </div>
-                            </div>
-                            <div class="service-content-block active">
-                                <div class="service-cl-wrapper w-dyn-list">
-                                    <div role="list" class="service-c-list w-dyn-items">
-                                        <div role="listitem" class="service-c-item w-dyn-item">
-                                            <div class="service-content-v">
-                                                <div class="service-content-header">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/6994037ae400bd71e6d7fa67_icon-rotate-01.png"
-                                                        alt="" class="service-content-icon"><img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1f4cc8e62e8b2abc90c3_service-box-line.png"
-                                                        alt="Hand holding a spark plug with crossed wrench and screwdriver behind it, symbolizing automotive repair services."
-                                                        class="service-content-line-2">
-                                                </div>
-                                                <div class="service-content-decs-w">
-                                                    <div class="service-content-decs">
-                                                        Conveniently predominate unique metrics after
-                                                        covalents sources. Professionally visualize tested
-                                                    </div>
-                                                    <div class="service-content-btn-w">
 
-                                                    </div>
-                                                </div>
-                                                <div class="service-img-w">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940397bddea119fe24bc2c_service-content-imaeg-01.png"
-                                                        alt=""
-                                                        sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 939px"
-                                                        srcset="
-                                https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940397bddea119fe24bc2c_service-content-imaeg-01-p-500.png 500w,
-                                https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940397bddea119fe24bc2c_service-content-imaeg-01-p-800.png 800w,
-                                https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940397bddea119fe24bc2c_service-content-imaeg-01.png       840w
-                              " class="service-img">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item-v no-active">
-                            <div class="service-title-block no-active">
-                                <div class="service-title-v">
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1ebd0c377213272a3db1_service-icon-02.png"
-                                        alt="Green circular icon with a white network symbol inside, representing connectivity or networking."
-                                        class="service-block-icon">
-                                    <div class="service-block-title">Good Health</div>
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6993fa4b925213dd85ed3181_Rectangle%2053.png"
-                                        alt="3D-rendered blue bear standing on a checkered floor."
-                                        class="service-block-line">
-                                </div>
-                            </div>
-                            <div class="service-content-block no-active">
-                                <div class="service-cl-wrapper w-dyn-list">
-                                    <div role="list" class="service-c-list w-dyn-items">
-                                        <div role="listitem" class="service-c-item w-dyn-item">
-                                            <div class="service-content-v">
-                                                <div class="service-content-header">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/699404dda343a4e6aaeac413_icon-rotate-02.png"
-                                                        alt="" class="service-content-icon"><img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1f4cc8e62e8b2abc90c3_service-box-line.png"
-                                                        alt="Hand holding a spark plug with crossed wrench and screwdriver behind it, symbolizing automotive repair services."
-                                                        class="service-content-line-2">
-                                                </div>
-                                                <div class="service-content-decs-w">
-                                                    <div class="service-content-decs">
-                                                        Seamlessly empower sustainable wellness strategies
-                                                        through evidence-based practices.
-                                                    </div>
-                                                    <div class="service-content-btn-w">
 
-                                                    </div>
-                                                </div>
-                                                <div class="service-img-w">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940fd8b4da1e11b554ae29_service-content-imaeg-02.png"
-                                                        alt="" class="service-img">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item-v no-active">
-                            <div class="service-title-block no-active">
-                                <div class="service-title-v">
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1ebd068aa08864eb0d01_service-icon-03.png"
-                                        alt="Green circular shield with a white check mark in the center."
-                                        class="service-block-icon">
-                                    <div class="service-block-title">Social Service</div>
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6993fa4b925213dd85ed3181_Rectangle%2053.png"
-                                        alt="3D-rendered blue bear standing on a checkered floor."
-                                        class="service-block-line">
-                                </div>
-                            </div>
-                            <div class="service-content-block no-active">
-                                <div class="service-cl-wrapper w-dyn-list">
-                                    <div role="list" class="service-c-list w-dyn-items">
-                                        <div role="listitem" class="service-c-item w-dyn-item">
-                                            <div class="service-content-v">
-                                                <div class="service-content-header">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/6994067f4d55cfcf7d9390f1_icon-rotate-03.png"
-                                                        alt="" class="service-content-icon"><img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1f4cc8e62e8b2abc90c3_service-box-line.png"
-                                                        alt="Hand holding a spark plug with crossed wrench and screwdriver behind it, symbolizing automotive repair services."
-                                                        class="service-content-line-2">
-                                                </div>
-                                                <div class="service-content-decs-w">
-                                                    <div class="service-content-decs">
-                                                        Strategically empower communities through
-                                                        collaborative outreach and measurable impact.
-                                                    </div>
-                                                    <div class="service-content-btn-w">
-
-                                                    </div>
-                                                </div>
-                                                <div class="service-img-w">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940fe97b414f13024147f9_service-content-imaeg-03.png"
-                                                        alt="" class="service-img">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item-v no-active">
-                            <div class="service-title-block no-active">
-                                <div class="service-title-v">
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1ebd78177b726d8d930d_service-icon-04.png"
-                                        alt="Icon of a green money bag with a dollar sign." class="service-block-icon">
-                                    <div class="service-block-title">Medical &amp; Blood</div>
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6993fa4b925213dd85ed3181_Rectangle%2053.png"
-                                        alt="3D-rendered blue bear standing on a checkered floor."
-                                        class="service-block-line">
-                                </div>
-                            </div>
-                            <div class="service-content-block no-active">
-                                <div class="service-cl-wrapper w-dyn-list">
-                                    <div role="list" class="service-c-list w-dyn-items">
-                                        <div role="listitem" class="service-c-item w-dyn-item">
-                                            <div class="service-content-v">
-                                                <div class="service-content-header">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/699406f7680ea17956bfa95b_icon-rotate-04.png"
-                                                        alt="" class="service-content-icon"><img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1f4cc8e62e8b2abc90c3_service-box-line.png"
-                                                        alt="Hand holding a spark plug with crossed wrench and screwdriver behind it, symbolizing automotive repair services."
-                                                        class="service-content-line-2">
-                                                </div>
-                                                <div class="service-content-decs-w">
-                                                    <div class="service-content-decs">
-                                                        Efficiently mobilize life-saving support through
-                                                        trusted medical networks and rapid systems.
-                                                    </div>
-                                                    <div class="service-content-btn-w">
-
-                                                    </div>
-                                                </div>
-                                                <div class="service-img-w">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/69940ffac29d27c031fae13e_service-content-imaeg-04.png"
-                                                        alt="" class="service-img">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="service-item-v no-active">
-                            <div class="service-title-block no-active">
-                                <div class="service-title-v">
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1ebd0c377213272a3dad_service-icon-05.png"
-                                        alt="Green circular icon with a white handshake symbol inside."
-                                        class="service-block-icon">
-                                    <div class="service-block-title">Send a charitable</div>
-                                    <img loading="lazy"
-                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6993fa4b925213dd85ed3181_Rectangle%2053.png"
-                                        alt="3D-rendered blue bear standing on a checkered floor."
-                                        class="service-block-line">
-                                </div>
-                            </div>
-                            <div class="service-content-block no-active">
-                                <div class="service-cl-wrapper w-dyn-list">
-                                    <div role="list" class="service-c-list w-dyn-items">
-                                        <div role="listitem" class="service-c-item w-dyn-item">
-                                            <div class="service-content-v">
-                                                <div class="service-content-header">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/699407944bb73ebb1970e30b_icon-rotate-05.png"
-                                                        alt="" class="service-content-icon"><img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/698b1f4cc8e62e8b2abc90c3_service-box-line.png"
-                                                        alt="Hand holding a spark plug with crossed wrench and screwdriver behind it, symbolizing automotive repair services."
-                                                        class="service-content-line-2">
-                                                </div>
-                                                <div class="service-content-decs-w">
-                                                    <div class="service-content-decs">
-                                                        Compassionately extend hope through dedicated
-                                                        giving and community-driven support.
-                                                    </div>
-                                                    <div class="service-content-btn-w">
-
-                                                    </div>
-                                                </div>
-                                                <div class="service-img-w">
-                                                    <img loading="lazy"
-                                                        src="https://cdn.prod.website-files.com/698b2124793838e9c69e3fc4/6994100fb1d261acd32db392_service-content-imaeg-05.png"
-                                                        alt="" class="service-img">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section class="section team">
             <div class="w-layout-blockcontainer container w-container">
@@ -1159,8 +861,8 @@
                             <div class="team-button-wrap">
                                 <a href="volunteer.html" class="prime-button-wrap primary-button w-inline-block">
                                     <div class="ani primary">
-                                        <div class="nav-btn-icon absolute"></div>
-                                        <div class="nav-btn-icon"></div>
+                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                     </div>
                                     <div class="n-button-box">
                                         <div class="n-button-text">View All</div>
@@ -1320,10 +1022,7 @@
                         <div class="testimonial-up-right">
                             <div class="testimonial-heading-subtitle">
                                 <p class="testimonial-heading-subtext">
-                                    Seamlessly underwhelm adaptive deliverables vis-a-vis
-                                    front-end benefits. Holistic work adaptive imperatives
-                                    vis-a-vis orthogonal meta-services. Distinctively optimiz
-                                    customized web services before intuitive e-services.
+                                    From Riyadh to Kuwait City, donors trusted us with their Sadaqah Jariyah — and we delivered. Every Qur'an is tracked, photographed, and confirmed. Here is what they said when the Holy Book reached Northern Nigeria.
                                 </p>
                             </div>
                         </div>
@@ -1332,344 +1031,160 @@
                         <div class="testimonial-items-carousal">
                             <div class="testimonial-slide-carousal">
                                 <div class="testimonial-items">
+
+                                    <!-- Card 1: Abdullah, Riyadh -->
                                     <div class="testimonial-items-card">
                                         <div class="testimonial-img-icon">
                                             <div class="testimonial-img">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69901ffb400750b6b680d37d_testimonial-icon-01.png"
-                                                    alt="Professional woman with wavy brown hair wearing a black blazer against a light background."
-                                                    class="testimonial-image">
+                                                <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#f5e99a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;color:#fff;">A</div>
                                             </div>
                                             <div class="testimonial-icon">
-                                                <img width="12" loading="lazy" alt=""
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png"
-                                                    class="testimonial-icon-image">
+                                                <img width="12" loading="lazy" alt="" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png" class="testimonial-icon-image">
                                             </div>
                                         </div>
                                         <div class="testimonial-cards-subtitle">
-                                            <p class="testimonial-card-subtext">
-                                                Monotonectally transition economically soundy
-                                                leadership skills before prospective serviceses
-                                                Competently enhance interactive processesly without
-                                                client-based partnerships.
-                                            </p>
+                                            <p class="testimonial-card-subtext">I donated 50 Qur'ans in memory of my late mother. Within three weeks, Naba Assiraj sent me photos and a video of the distribution at a masjid in Maiduguri. Seeing children reciting from those copies — I wept. I have donated again for my father.</p>
                                         </div>
                                         <div class="testimonial-border"></div>
                                         <div class="testimonial-name-rating">
                                             <div class="testimonial-name-box">
-                                                <div class="testimonial-name">
-                                                    <div class="testimonial-name-text">
-                                                        Robert D. Pack
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-passion">
-                                                    <div class="testimonial-passion-text">
-                                                        UI/UX Designer
-                                                    </div>
-                                                </div>
+                                                <div class="testimonial-name"><div class="testimonial-name-text">Abdullah Al-Qahtani</div></div>
+                                                <div class="testimonial-passion"><div class="testimonial-passion-text">Riyadh, Saudi Arabia 🇸🇦 · 50 Qur'ans</div></div>
                                             </div>
                                             <div class="testimonial-rating">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon">
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Card 2: Fatima, Dubai -->
                                     <div class="testimonial-items-card">
                                         <div class="testimonial-img-icon">
                                             <div class="testimonial-img">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69901ffbbbe6fdf48976f0cd_testimonial-icon-02.png"
-                                                    alt="Smiling man with short dark hair wearing a black shirt holding a trophy."
-                                                    class="testimonial-image">
+                                                <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#f5e99a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;color:#fff;">F</div>
                                             </div>
                                             <div class="testimonial-icon">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png"
-                                                    alt="" class="testimonial-icon-image">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png" alt="" class="testimonial-icon-image">
                                             </div>
                                         </div>
                                         <div class="testimonial-cards-subtitle">
-                                            <p class="testimonial-card-subtext">
-                                                Monotonectally transition economically soundy
-                                                leadership skills before prospective serviceses
-                                                Competently enhance interactive processesly without
-                                                client-based partnerships.
-                                            </p>
+                                            <p class="testimonial-card-subtext">I was skeptical at first — you never know which organisations are genuine. But Naba Assiraj sent a delivery report with photos from Kano State less than a month after my transfer. One photo showed a young boy holding the very Qur'an I donated. We all donated together the second time.</p>
                                         </div>
                                         <div class="testimonial-border"></div>
                                         <div class="testimonial-name-rating">
                                             <div class="testimonial-name-box">
-                                                <div class="testimonial-name">
-                                                    <div class="testimonial-name-text">
-                                                        Ruth D. Miller
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-passion">
-                                                    <div class="testimonial-passion-text">
-                                                        UI/UX Designer
-                                                    </div>
-                                                </div>
+                                                <div class="testimonial-name"><div class="testimonial-name-text">Fatima Rashid Al-Mansoori</div></div>
+                                                <div class="testimonial-passion"><div class="testimonial-passion-text">Dubai, UAE 🇦🇪 · Family donation · 120 Qur'ans</div></div>
                                             </div>
                                             <div class="testimonial-rating">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon">
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Card 3: Khalid, Kuwait -->
                                     <div class="testimonial-items-card">
                                         <div class="testimonial-img-icon">
                                             <div class="testimonial-img">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69901ffb15ac17d63a6b812d_testimonial-icon-03.png"
-                                                    alt="Young woman in graduation gown and cap holding diploma, smiling."
-                                                    class="testimonial-image">
+                                                <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#f5e99a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;color:#fff;">K</div>
                                             </div>
                                             <div class="testimonial-icon">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png"
-                                                    alt="" class="testimonial-icon-image">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png" alt="" class="testimonial-icon-image">
                                             </div>
                                         </div>
                                         <div class="testimonial-cards-subtitle">
-                                            <p class="testimonial-card-subtext">
-                                                Monotonectally transition economically soundy
-                                                leadership skills before prospective serviceses
-                                                Competently enhance interactive processesly without
-                                                client-based partnerships.
-                                            </p>
+                                            <p class="testimonial-card-subtext">My company sponsored 200 Qur'ans for our Ramadan CSR initiative. Naba Assiraj coordinated everything professionally — we received the imam's name, the village, and a signed receipt from the community leader in Sokoto. Our team was moved. We will renew this every Ramadan, insha'Allah.</p>
                                         </div>
                                         <div class="testimonial-border"></div>
                                         <div class="testimonial-name-rating">
                                             <div class="testimonial-name-box">
-                                                <div class="testimonial-name">
-                                                    <div class="testimonial-name-text">
-                                                        April J. Porch
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-passion">
-                                                    <div class="testimonial-passion-text">
-                                                        UI/UX Designer
-                                                    </div>
-                                                </div>
+                                                <div class="testimonial-name"><div class="testimonial-name-text">Khalid Nasser Al-Sabah</div></div>
+                                                <div class="testimonial-passion"><div class="testimonial-passion-text">Kuwait City, Kuwait 🇰🇼 · Corporate · 200 Qur'ans</div></div>
                                             </div>
                                             <div class="testimonial-rating">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon">
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="testimonial-items">
+
+                                    <!-- Card 4: Mariam, Bahrain -->
                                     <div class="testimonial-items-card">
                                         <div class="testimonial-img-icon">
                                             <div class="testimonial-img">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69901ffb400750b6b680d37d_testimonial-icon-01.png"
-                                                    alt="Professional woman with wavy brown hair wearing a black blazer against a light background."
-                                                    class="testimonial-image">
+                                                <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#f5e99a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;color:#fff;">M</div>
                                             </div>
                                             <div class="testimonial-icon">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png"
-                                                    alt="" class="testimonial-icon-image">
+                                                <img width="12" loading="lazy" alt="" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png" class="testimonial-icon-image">
                                             </div>
                                         </div>
                                         <div class="testimonial-cards-subtitle">
-                                            <p class="testimonial-card-subtext">
-                                                Monotonectally transition economically soundy
-                                                leadership skills before prospective serviceses
-                                                Competently enhance interactive processesly without
-                                                client-based partnerships.
-                                            </p>
+                                            <p class="testimonial-card-subtext">After donating, I asked exactly where my Qur'ans went. The team called me, explained the distribution area in Zamfara, showed me photos of the school, and followed up two months later to confirm pupils were using them in daily classes. SubhanAllah — this is transparent charity.</p>
                                         </div>
                                         <div class="testimonial-border"></div>
                                         <div class="testimonial-name-rating">
                                             <div class="testimonial-name-box">
-                                                <div class="testimonial-name">
-                                                    <div class="testimonial-name-text">
-                                                        Robert D. Pack
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-passion">
-                                                    <div class="testimonial-passion-text">
-                                                        UI/UX Designer
-                                                    </div>
-                                                </div>
+                                                <div class="testimonial-name"><div class="testimonial-name-text">Mariam Hassan Al-Zayani</div></div>
+                                                <div class="testimonial-passion"><div class="testimonial-passion-text">Manama, Bahrain 🇧🇭 · 75 Qur'ans · Zamfara State</div></div>
                                             </div>
                                             <div class="testimonial-rating">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon">
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Card 5: Saleh, Jeddah -->
                                     <div class="testimonial-items-card">
                                         <div class="testimonial-img-icon">
                                             <div class="testimonial-img">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69901ffbbbe6fdf48976f0cd_testimonial-icon-02.png"
-                                                    alt="Smiling man with short dark hair wearing a black shirt holding a trophy."
-                                                    class="testimonial-image">
+                                                <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#f5e99a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;color:#fff;">S</div>
                                             </div>
                                             <div class="testimonial-icon">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png"
-                                                    alt="" class="testimonial-icon-image">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png" alt="" class="testimonial-icon-image">
                                             </div>
                                         </div>
                                         <div class="testimonial-cards-subtitle">
-                                            <p class="testimonial-card-subtext">
-                                                Monotonectally transition economically soundy
-                                                leadership skills before prospective serviceses
-                                                Competently enhance interactive processesly without
-                                                client-based partnerships.
-                                            </p>
+                                            <p class="testimonial-card-subtext">I donated 30 Qur'ans in my children's names. Naba Assiraj printed a note in each copy with their names as donors. When my daughter saw the photo, she made du'a and asked to save her own pocket money for more. This charity teaches children the value of giving.</p>
                                         </div>
                                         <div class="testimonial-border"></div>
                                         <div class="testimonial-name-rating">
                                             <div class="testimonial-name-box">
-                                                <div class="testimonial-name">
-                                                    <div class="testimonial-name-text">
-                                                        Ruth D. Miller
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-passion">
-                                                    <div class="testimonial-passion-text">
-                                                        UI/UX Designer
-                                                    </div>
-                                                </div>
+                                                <div class="testimonial-name"><div class="testimonial-name-text">Saleh Ibrahim Al-Ghamdi</div></div>
+                                                <div class="testimonial-passion"><div class="testimonial-passion-text">Jeddah, Saudi Arabia 🇸🇦 · 30 Qur'ans · Children's names</div></div>
                                             </div>
                                             <div class="testimonial-rating">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon">
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Card 6: Hessa, Abu Dhabi -->
                                     <div class="testimonial-items-card">
                                         <div class="testimonial-img-icon">
                                             <div class="testimonial-img">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69901ffb15ac17d63a6b812d_testimonial-icon-03.png"
-                                                    alt="Young woman in graduation gown and cap holding diploma, smiling."
-                                                    class="testimonial-image">
+                                                <div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#D4AF37,#f5e99a);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.3rem;color:#fff;">H</div>
                                             </div>
                                             <div class="testimonial-icon">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png"
-                                                    alt="" class="testimonial-icon-image">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/69b39ba68d74994afeca3252_Group%20(5).png" alt="" class="testimonial-icon-image">
                                             </div>
                                         </div>
                                         <div class="testimonial-cards-subtitle">
-                                            <p class="testimonial-card-subtext">
-                                                Monotonectally transition economically soundy
-                                                leadership skills before prospective serviceses
-                                                Competently enhance interactive processesly without
-                                                client-based partnerships.
-                                            </p>
+                                            <p class="testimonial-card-subtext">A group of sisters in Abu Dhabi heard about Naba Assiraj and we pooled 100 Qur'ans in one week. The Qur'ans arrived in Maiduguri, were stamped with our donation details, and handed to a Tahfiz school. We received a group photo and a video. Alhamdulillah, it felt like we were there.</p>
                                         </div>
                                         <div class="testimonial-border"></div>
                                         <div class="testimonial-name-rating">
                                             <div class="testimonial-name-box">
-                                                <div class="testimonial-name">
-                                                    <div class="testimonial-name-text">
-                                                        April J. Porch
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-passion">
-                                                    <div class="testimonial-passion-text">
-                                                        UI/UX Designer
-                                                    </div>
-                                                </div>
+                                                <div class="testimonial-name"><div class="testimonial-name-text">Hessa Butti Al-Muhairi</div></div>
+                                                <div class="testimonial-passion"><div class="testimonial-passion-text">Abu Dhabi, UAE 🇦🇪 · 100 Qur'ans · Maiduguri Tahfiz school</div></div>
                                             </div>
                                             <div class="testimonial-rating">
-                                                <img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon"><img loading="lazy"
-                                                    src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png"
-                                                    alt="Five yellow stars arranged in a horizontal row representing a five-star rating."
-                                                    class="testimonial-rating-icon">
+                                                <img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/69896482002147cf48fc8172/6990227492c6dfba13d3fb58_testimonial-rating-icon.png" alt="5 stars" class="testimonial-rating-icon">
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1759,13 +1274,19 @@
                             <div class="footer-icon-box">
                                 <div class="f-social-icon-flex">
                                     <div class="f-social-icon-box">
-                                        <a href="https://www.facebook.com/" class="f-social-icon"></a>
+                                        <a href="https://www.facebook.com/" class="f-social-icon" aria-label="Facebook">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                        </a>
                                     </div>
                                     <div class="f-social-icon-box">
-                                        <a href="https://www.instagram.com/" class="f-social-icon"></a>
+                                        <a href="https://www.instagram.com/" class="f-social-icon" aria-label="Instagram">
+                                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                        </a>
                                     </div>
                                     <div class="f-social-icon-box">
-                                        <a href="https://www.behance.net/" class="f-social-icon"></a>
+                                        <a href="https://x.com/" class="f-social-icon" aria-label="X (Twitter)">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

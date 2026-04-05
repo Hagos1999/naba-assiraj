@@ -17,9 +17,48 @@
             background-color: #D4AF37 !important; /* Fixed: Removed causes-box-subtext */
             color: #fff !important;
             border-color: #D4AF37 !important;
+            box-shadow: none !important; /* Removed UI AI-like shadow */
         }
         .n-menu-link-text:hover, a:hover, .breadcramb-title-text {
             color: #C59B27 !important;
+        }
+        
+        /* Active Navbar Link Fix */
+        .w--current, a.w--current, .n-menu-link-text.w--current, .f-page-text.w--current {
+            color: #D4AF37 !important;
+        }
+        
+        /* Navbar Green Hover Dot Fix */
+        .hover {
+            background-color: #D4AF37 !important;
+        }
+
+        /* Sticky Navbar background */
+        .section.header-s, .nav-wrapper, .fixed.about {
+            background-color: rgba(255, 255, 255, 0.98) !important;
+        }
+
+        /* Footer layout – restored */
+        .section.footer {
+            padding-top: 60px !important;
+            padding-bottom: 40px !important;
+        }
+        .footer-wrap-main {
+            gap: 40px !important;
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+        .f-social-icon-box {
+            width: 52px !important;
+            height: 52px !important;
+            min-height: 52px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .f-social-icon { font-size: 0 !important; }
+        .footer-logo-image {
+            max-height: 80px !important;
         }
 
         /* Social Media Hover Fixes */
@@ -127,8 +166,8 @@
                         <div class="mini-contact-btn-wrap">
                             <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                 <div class="ani primary">
-                                    <div class="nav-btn-icon absolute"></div>
-                                    <div class="nav-btn-icon"></div>
+                                    <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                    <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                 </div>
                                 <div class="n-button-box">
                                     <div class="n-button-text">Donate Now</div>
@@ -197,8 +236,8 @@
                             <div class="menu-button-box menu-hide">
                                 <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                     <div class="ani primary">
-                                        <div class="nav-btn-icon absolute"></div>
-                                        <div class="nav-btn-icon"></div>
+                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                     </div>
                                     <div class="n-button-box">
                                         <div class="n-button-text">Donate Now</div>

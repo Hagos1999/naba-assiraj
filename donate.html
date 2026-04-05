@@ -353,9 +353,48 @@
             background-color: #D4AF37 !important; /* Fixed: Removed causes-box-subtext */
             color: #fff !important;
             border-color: #D4AF37 !important;
+            box-shadow: none !important; /* Removed UI AI-like shadow */
         }
         .n-menu-link-text:hover, a:hover, .breadcramb-title-text {
             color: #C59B27 !important;
+        }
+        
+        /* Active Navbar Link Fix */
+        .w--current, a.w--current, .n-menu-link-text.w--current, .f-page-text.w--current {
+            color: #D4AF37 !important;
+        }
+        
+        /* Navbar Green Hover Dot Fix */
+        .hover {
+            background-color: #D4AF37 !important;
+        }
+
+        /* Sticky Navbar background */
+        .section.header-s, .nav-wrapper, .fixed.about {
+            background-color: rgba(255, 255, 255, 0.98) !important;
+        }
+
+        /* Footer layout – restored */
+        .section.footer {
+            padding-top: 60px !important;
+            padding-bottom: 40px !important;
+        }
+        .footer-wrap-main {
+            gap: 40px !important;
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+        .f-social-icon-box {
+            width: 52px !important;
+            height: 52px !important;
+            min-height: 52px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+        .f-social-icon { font-size: 0 !important; }
+        .footer-logo-image {
+            max-height: 80px !important;
         }
 
         /* Social Media Hover Fixes */
@@ -463,8 +502,8 @@
                         <div class="mini-contact-btn-wrap">
                             <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                 <div class="ani primary">
-                                    <div class="nav-btn-icon absolute"></div>
-                                    <div class="nav-btn-icon"></div>
+                                    <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                    <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                 </div>
                                 <div class="n-button-box">
                                     <div class="n-button-text">Donate Now</div>
@@ -533,8 +572,8 @@
                             <div class="menu-button-box menu-hide">
                                 <a href="donate.html" class="prime-button-wrap primary-button w-inline-block">
                                     <div class="ani primary">
-                                        <div class="nav-btn-icon absolute"></div>
-                                        <div class="nav-btn-icon"></div>
+                                        <div class="nav-btn-icon absolute"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
+                                        <div class="nav-btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-left:4px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></div>
                                     </div>
                                     <div class="n-button-box">
                                         <div class="n-button-text">Donate Now</div>
@@ -686,13 +725,19 @@
                             <div class="footer-icon-box">
                                 <div class="f-social-icon-flex">
                                     <div class="f-social-icon-box">
-                                        <a href="https://www.facebook.com/" class="f-social-icon"></a>
+                                        <a href="https://www.facebook.com/" class="f-social-icon" aria-label="Facebook">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                                        </a>
                                     </div>
                                     <div class="f-social-icon-box">
-                                        <a href="https://www.instagram.com/" class="f-social-icon"></a>
+                                        <a href="https://www.instagram.com/" class="f-social-icon" aria-label="Instagram">
+                                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                        </a>
                                     </div>
                                     <div class="f-social-icon-box">
-                                        <a href="https://www.behance.net/" class="f-social-icon"></a>
+                                        <a href="https://x.com/" class="f-social-icon" aria-label="X (Twitter)">
+                                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
