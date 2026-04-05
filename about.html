@@ -80,6 +80,11 @@
         
         /* Navbar Green Hover Dot Fix */
         .hover {
+            background-color: transparent !important;
+            transition: background-color 0.3s ease;
+        }
+        .n-menu-item-li:hover .hover,
+        .n-menu-item-li:has(.w--current) .hover {
             background-color: #D4AF37 !important;
         }
 
